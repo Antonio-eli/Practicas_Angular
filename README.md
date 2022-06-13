@@ -14,4 +14,5 @@ Cuando se crea un componente este debe estar importado en un modulo como en el e
 - ngOnInit: es simplemente una interfaz. Un «contrato» que obliga a cumplir una cierta estructura (en este caso, incluir el método ngOnInit()) a la clase que lo implementa. Se debería utilizar ngOnInit para las inicializaciones de las variables, evitando hacerlas en el constructor.
 ## Módulos
 - En los imports solo van módulos como observamos en el ejemplo
+- CommonModule: CommonModule se utiliza para exportar todas las directivas y tuberías básicas de Angular
 
