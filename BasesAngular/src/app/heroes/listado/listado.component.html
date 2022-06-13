@@ -6,9 +6,9 @@
                 <li class="list-group-item">{{ i+1 }} - {{heroe}}</li>
             </ul>
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6" *ngIf="heroeBorrado">
             <h3 class="mb-3">Héroe borrado</h3>
-            <ul class="list-group list-group list-group-flush">
+            <ul class="list-group shadow bg-body rounded">
                 <li class="list-group-item-danger p-2">{{heroeBorrado}}</li>
             </ul>
         </div>
