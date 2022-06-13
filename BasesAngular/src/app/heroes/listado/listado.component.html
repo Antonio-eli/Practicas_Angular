@@ -6,12 +6,17 @@
                 <li class="list-group-item">{{ i+1 }} - {{heroe}}</li>
             </ul>
         </div>
-        <div class="col-md-6" *ngIf="heroeBorrado">
+        <div class="col-md-6" *ngIf="heroeBorrado; else noBorrado">
             <h3 class="mb-3">Héroe borrado</h3>
             <ul class="list-group shadow bg-body rounded">
                 <li class="list-group-item-danger p-2">{{heroeBorrado}}</li>
             </ul>
         </div>
+        <ng-template #noBorrado>
+            <div class="col-md-6">
+                <p class="mb-3 list-group-item list-group-item-primary text-center">No ha borrado nada.</p>
+            </div>
+        </ng-template>
     </div>
 </div>
 <div class="col-md-6 d-flex justify-content-end">
