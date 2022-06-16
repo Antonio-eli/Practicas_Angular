@@ -25,21 +25,12 @@ export class MainPageComponent {
     }
   ];
 
-  deletePersonaje: string = '';
-  addPersonaje: string = '';
   nuevo: Personaje = {
-    nombre : '',
-    poder  : 0
+    nombre: 'Bulma',
+    poder: 10
   }
 
-  agregar() {
-    if (this.nuevo.nombre.trim().length === 0) { return; }
-    console.log(this.nuevo);
-    this.personajes.push( this.nuevo );
-    this.nuevo = {
-      nombre : '',
-      poder  : 0
-    }
-  }
+  deletePersonaje: string = '';
+  addPersonaje: string = '';
 
 }

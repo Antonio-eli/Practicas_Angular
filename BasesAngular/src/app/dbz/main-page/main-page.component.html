@@ -6,21 +6,7 @@
             <app-personajes [personajes]="personajes"></app-personajes>
         </div>
         <div class="col-md-6">
-            <h3 class="fw-light">Agregar personaje: <small>{{ nuevo.nombre }}</small></h3>
-            <hr>
-            <form (ngSubmit)="agregar()">
-                <div class="mb-3">
-                    <!-- <input type="text" class="form-control" placeholder="Nombre" [value]="nuevo.nombre" aria-label="Nombre"> -->
-                    <input type="text" class="form-control" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre" aria-label="Nombre">
-                </div>
-                <div class="mb-3">
-                    <!-- <input type="text" class="form-control" placeholder="Poder" [value]="nuevo.poder" aria-label="Poder"> -->
-                    <input type="text" class="form-control" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder" aria-label="Poder">
-                </div>
-                <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="submit">Agregar</button>
-                </div>
-            </form>
+            <app-agregar [personajes]="personajes" [nuevo]="nuevo"></app-agregar>
         </div>
     </div>
 </div>
