@@ -16,8 +16,8 @@ export class AgregarComponent {
 
   agregar() {
     if (this.nuevo.nombre.trim().length === 0) { return; }
-    console.log(this.nuevo);
-    console.log('%c Emitiendo evento EventEmitter con .emit( this.nuevo )  ', 'background: #E67E22; color: #FFF');
+    // console.log(this.nuevo);
+    // console.log('%c Emitiendo evento EventEmitter con .emit( this.nuevo )  ', 'background: #E67E22; color: #FFF');
     this.onNuevoPersonaje.emit( this.nuevo );
     this.nuevo = {
       nombre : '',
