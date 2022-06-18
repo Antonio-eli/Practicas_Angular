@@ -27,8 +27,9 @@ export class DbzService {
         return [...this._personajes];
     }
 
-    constructor(){
-        console.log();
-        console.log('%c Servicio inicializado ', 'background: #222; color: #bada55');
+    constructor(){ console.log('%c Servicio inicializado ', 'background: #222; color: #bada55'); }
+
+    agregarPersonaje( personaje: Personaje){
+        this._personajes.push( personaje );
     }
 }
