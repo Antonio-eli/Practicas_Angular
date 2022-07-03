@@ -8,3 +8,9 @@
 
 ### Pipes |
 - Los pipes nos permiten transformar visualmente la información
+### Observables
+### .subscribe
+
+- Normalmente __.subscribe__ significa un arreglo para recibir algo.
+- Se generada a partir del observable.
+- Los suscriptores  son los que consumen los datos.
