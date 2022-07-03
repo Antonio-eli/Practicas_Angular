@@ -15,7 +15,10 @@ export class BusquedaComponent {
     /*console.log(this.txtBuscar.nativeElement);*/
     const styles = ['color: whithe', 'background: #BA4A00'].join(';');
     const valor = this.txtBuscar.nativeElement.value;
-    //console.log('%c%s', styles, valor);
+    /*console.log('%c%s', styles, valor);*/
+    if (valor.trim().length === 0) {
+      return;
+    }
     this.gifsService.buscarGifs( valor );
     this.txtBuscar.nativeElement.value = '';
   }
