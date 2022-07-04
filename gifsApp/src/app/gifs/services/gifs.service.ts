@@ -8,7 +8,9 @@ export class GifsService {
 
   private     apikey: string  = 'f4MdoV7pknpWEZFEx364O4vunJIWsLUR';
   private _historial: string[] = [];
+  public resultados : any[] = [];
 
+  // TODO: Cambiar any por su tipado correspondiente
   get historial() {
     return [...this._historial];
   }
@@ -22,9 +24,10 @@ export class GifsService {
       this._historial = this._historial.splice(0, 10);
     }
     console.log(this._historial);
-    this.http.get('https://api.giphy.com/v1/gifs/search?api_key=f4MdoV7pknpWEZFEx364O4vunJIWsLUR&q=one pice&limit=10')
+    this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=f4MdoV7pknpWEZFEx364O4vunJIWsLUR&q=${ query }&limit=10`)
               .subscribe( (resp: any) => {
                 console.log(resp.data);
+                this.resultados = resp.data;
               });
   }
 }
