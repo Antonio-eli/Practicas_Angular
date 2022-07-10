@@ -1,9 +1,18 @@
-# Angular: De cero a experto (Angular 10+) (Legacy).
-## Conocimientos adquiridos 🏆
-1. Tener una base sólida para trabajar con Angular.
-2. Crear aplicaciones en Angular siguiendo las mejores prácticas.
-3. Dominar las directivas, pipes, componentes, servicios y la estructura de una aplicación de Angular.
-4. Dominar TypeScript para crear aplicaciones en Angular.
-5. Aplicar los conceptos nuevos del ECMAScript 6 en nuestros proyectos de Angular
-<br><br>
+# GifsApp
+
+### @ViewChild
+
+- Hace posible acceder a elementos DOM nativos que tienen una variable de referencia de plantilla. Acepta clases css, elementos HTML, directivas, componente o un selector de referencia
+- Non-null assertion operator __!__, se utiliza para ignorar los tipos indefinidos o nulos, durante el tiempo de ejecución.
+- ``` _historial ``` Para identificar de forma visual que una propiedad es privado.
+
+### Pipes |
+- Los pipes nos permiten transformar visualmente la información
+### Observables
+### .subscribe
+- Normalmente __.subscribe__ significa un arreglo para recibir algo.
+- Se generada a partir del observable.
+- Los suscriptores  son los que consumen los datos.
+
+## Proyecto realizado.
 <img src="img/angular.png" alt="Angular |Front-end developer.">
