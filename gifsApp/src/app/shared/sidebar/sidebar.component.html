@@ -3,7 +3,7 @@
     <hr>
     <ul class="list-group list-reset">
         <li>
-            <a href=" # " *ngFor="let busqueda of historial" class="list-group-item mt-2">
+            <a href="#" *ngFor="let busqueda of historial" (click)="buscar(busqueda)" class="list-group-item mt-2">
                 <span><i class="bi bi-hand-thumbs-up "></i> {{ busqueda | titlecase }}</span>
             </a>
         </li>
