@@ -16,3 +16,6 @@ Cuando se crea un componente este debe estar importado en un modulo como en el e
 - En los imports solo van módulos como observamos en el ejemplo
 - CommonModule: CommonModule se utiliza para exportar todas las directivas y tuberías básicas de Angular
 
+## Proyecto realizado.
+<img src="img/angular.png" alt="Angular |Front-end developer.">
+
