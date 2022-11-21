@@ -21,8 +21,12 @@
     "module": "es2020",
     "paths": {
       "@core/*": [
-        "src/app/core/*",
-        "src/app/modules/*",
+        "src/app/core/*"
+      ],
+      "@modules/*": [
+        "src/app/modules/*"
+      ],
+      "@shared/*": [
         "src/app/shared/*"
       ]
     },
